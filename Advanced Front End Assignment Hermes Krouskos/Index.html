@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+
+
+    <style>
+    </style>
+
+</head>
+<body>
+    <div class="hotels-page">
+        <section class="search-and-filter">
+            <div class="first-row">
+                <div class="first-col">
+                    <span class="fa fa-search"></span>
+                    <input id="search-TextField" list="hotelsAuto" type="text" placeholder="Champs Elysees, Paris" value="" />
+                    <datalist id="hotelsAuto">
+                    </datalist>
+                </div>
+
+                <div class="second-col">
+                    <input id="submit-reset" type="submit" value="Reset" />
+                </div>
+
+            </div>
+
+            <div class="second-row">
+                <div class="col first-col">
+                    <i class="fa fa-calendar"></i>
+                    <input id="checkInDate" placeholder="Check-in" />
+                </div>
+
+                <div class="col second-col">
+                    <i class="fa fa-calendar"></i>
+                    <input id="checkOutDate" placeholder="Check-out" />
+
+                </div>
+
+                <div class="col">
+                    <i class="fa fa-users"></i>
+                    <select id="rooms-DropDown">
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="third-row">
+                <div class="col first-col">
+                    <div class="label">
+                        <span>Price</span>
+                        <span id="maxPrice">max.$6000</span>
+                    </div>
+                    <input id="price-Range" type="range" min="0" max="5000" />
+                </div>
+                <div class="col">
+                    <div class="label">
+                        Property Type
+                    </div>
+                    <select id="Property-Type-DropDown">
+                    </select>
+                </div>
+                <div class="col">
+                    <div class="label">
+                        Guest Rating
+                    </div>
+                    <select id="Guest-Rating-DropDown">
+                    </select>
+                </div>
+                <div class="col">
+                    <div class="label">
+                        Hotel Location
+                    </div>
+                    <select id="Hotel-Location-DropDown">
+                    </select>
+                </div>
+                <div class="col">
+                    <div class="label">
+                        More Filters
+                    </div>
+                    <select id="More-Filters-DropDown">
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-and-sort">
+            <div class="map">
+                <iframe width="150" height="60" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d83998.94722687619!2d2.277019841665155!3d48.8588377391234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgr!4v1554987763683!5m2!1sen!2sgr"></iframe>
+            </div>
+
+            <div class="sorting">
+                <strong>Sort By</strong>
+                <select id="Sort-By-DropDown">
+                    <option value="nameAsc">Hotel name (Ascending)</option>
+                    <option value="nameDesc">Hotel name (Descending)</option>
+                    <option value="cityAsc">City (Ascending)</option>
+                    <option value="cityDesc">City (Descending)</option>
+                    <option value="priceAsc">Price (Ascending)</option>
+                    <option value="priceDesc">Price (Descending)</option>
+                </select>
+                <span class="info-icon">i</span>
+            </div>
+        </section>
+
+        <section id="listing-hotels-section" class="listing-hotels">
+
+            
+
+        </section>
+
+    </div>
+
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <script src="js/myScripts.js"></script>
+</body>
+</html>
